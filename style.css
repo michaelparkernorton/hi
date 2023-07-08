@@ -22,6 +22,7 @@ body {
     background-image: url(images/portfolio-banner.jpeg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
@@ -180,7 +181,7 @@ nav ul li a:hover::after {
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-right: 10px;
+    border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
 
