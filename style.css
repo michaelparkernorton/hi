@@ -400,15 +400,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
     color: #fff;
 }
 
-.copyright a:hover {
+.copyright a:hover{
     color: var(--primary-color);
 }
-
-#michael:hover {
-    color: var(--primary-color);
-}
-
-#m:hover {
-    color: #fff;
-}
-
