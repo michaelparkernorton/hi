@@ -37,24 +37,52 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam odit vitae nam consequuntur suscipit nisi aspernatur magnam commodi eaque debitis pariatur nostrum natus ut optio, quos quo quas? Quasi, minima.</p>
+                    <p>When I'm not hacking away on the computer I may be out at the soccer field coaching my team to be the best they can be.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
 
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Web Development</span><br>Web App Development</li>
                             <li><span>App Development</span><br>Building Android/iOS Apps</li>
                             <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
                         </ul>
                     </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Team lead at Freemote</li>
+                            <li><span>2020 - Current</span><br>Web App Development Training at ZTM</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - Current</span><br>Web App Development Training at ZTM</li>
+                            <li><span>2020 - Current</span><br>Bachelors from BYU </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+        }
+    </script>
 </body>
 </html>
