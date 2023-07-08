@@ -6,6 +6,11 @@
 
 }
 
+/* This was cool to learn! I have links now that will scroll to different sections of the webpage */
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -372,3 +377,34 @@ form .btn2 {
 input:-webkit-autofill, input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
 }
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright i {
+    color: var(--primary-color);
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.copyright a:hover {
+    color: var(--primary-color);
+}
+
+#michael:hover {
+    color: var(--primary-color);
+}
+
+#m:hover {
+    color: #fff;
+}
+
